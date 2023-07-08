@@ -11,3 +11,5 @@ const GithubContext = React.createContext();
 const GitHubProvider = ({ children }) => {
   return <GithubContext.Provider>{children}</GithubContext.Provider>;
 };
+
+export { GitHubProvider, GithubContext };
