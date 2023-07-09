@@ -8,8 +8,8 @@ const rootUrl = "https://api.github.com";
 
 const GithubContext = React.createContext();
 
-const GitHubProvider = ({ children }) => {
+const GithubProvider = ({ children }) => {
   return <GithubContext.Provider>{children}</GithubContext.Provider>;
 };
 
-export { GitHubProvider, GithubContext };
+export { GithubProvider, GithubContext };
