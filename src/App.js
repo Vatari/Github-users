@@ -9,9 +9,9 @@ function App() {
         <Route
           path="/"
           element={
-            <PrivateRoute>
-              <Dashboard />
-            </PrivateRoute>
+            //   <PrivateRoute>
+            <Dashboard />
+            //    </PrivateRoute>
           }
         />
         <Route path="login" element={<Login />} />
