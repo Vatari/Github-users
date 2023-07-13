@@ -3,7 +3,7 @@ import { GithubContext } from "../context/context";
 import styled from "styled-components";
 import { MdBusiness, MdLocationOn, MdLink } from "react-icons/md";
 const Card = () => {
-  const { guthubUser } = React.useContext(GithubContext);
+  const { githubUser } = React.useContext(GithubContext);
   const {
     avatar_url,
     html_url,
@@ -13,9 +13,15 @@ const Card = () => {
     bio,
     location,
     twitter_username,
-  } = guthubUser;
+  } = githubUser;
 
-  return <h2>card component</h2>;
+  return (
+    <Wrapper>
+      <header>
+        <img src={avatar_url} alt={name} />
+      </header>
+    </Wrapper>
+  );
 };
 const Wrapper = styled.article`
   background: var(--clr-white);
