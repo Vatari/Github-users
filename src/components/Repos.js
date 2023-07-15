@@ -6,9 +6,13 @@ const Repos = () => {
   const { repos } = React.useContext(GithubContext);
 
   return (
-    <h2>
-      <ExampleChart />
-    </h2>
+    <section className="global-section">
+      <Wrapper className="section-center">
+        <h2>
+          <ExampleChart />
+        </h2>
+      </Wrapper>
+    </section>
   );
 };
 
