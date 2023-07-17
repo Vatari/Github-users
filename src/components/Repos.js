@@ -43,7 +43,7 @@ const Repos = () => {
   return (
     <section className="global-section">
       <Wrapper className="section-center">
-        <Pie3D data={chartData} />
+        <Pie3D data={languages} />
         <h2>{/* <ExampleChart data={chartData} /> */}</h2>
       </Wrapper>
     </section>
