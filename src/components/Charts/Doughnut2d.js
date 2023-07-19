@@ -20,17 +20,17 @@ ReactFC.fcRoot(FusionCharts, Chart, FusionTheme);
 const ChartComponent = ({ data }) => {
   // STEP 3 - Creating the JSON object to store the chart configurations
   const chartConfigs = {
-    type: "pie3d", // The chart type
+    type: "doughnut2d", // The chart type
     width: "100%", // Width of the chart
     height: "400", // Height of the chart
     dataFormat: "json", // Data type
     dataSource: {
       // Chart Configuration
       chart: {
-        caption: "Languages",
-        theme: "fusion",
+        caption: "Stars Per Language",
         decimals: 0,
-        pieRadius: "35%",
+        doughnutRadius: "45%",
+        showPercentValues: 0,
         //  paletteColors: "#f0db4f"
       },
       // Chart Data
