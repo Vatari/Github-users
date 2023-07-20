@@ -32,7 +32,8 @@ const Repos = () => {
     })
     .map((item) => {
       return { ...item, value: item.stars };
-    });
+    })
+    .slice(0, 5);
 
   const chartData = [
     {
@@ -54,7 +55,7 @@ const Repos = () => {
       <Wrapper className="section-center">
         <Pie3D data={mostUsed} />
         <div></div>
-        <Doughnut2D data={chartData} />
+        <Doughnut2D data={mostPopular} />
         {/* <ExampleChart data={chartData} /> */}
         <div></div>
       </Wrapper>
