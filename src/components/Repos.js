@@ -26,6 +26,10 @@ const Repos = () => {
     })
     .slice(0, 5);
 
+  const mostPopular = Object.values(languages).sort((a, b) => {
+    return b.stars - a.stars;
+  });
+
   const chartData = [
     {
       label: "HTML",
