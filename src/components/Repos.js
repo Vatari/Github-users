@@ -41,6 +41,7 @@ const Repos = () => {
     (total, item) => {
       const { stargazers_count, name, forks } = item;
       total.stars[stargazers_count] = { label: name, value: stargazers_count };
+      total.forks[forks] = { label: name, value: forks };
       return total;
     },
     {
@@ -50,8 +51,11 @@ const Repos = () => {
   );
 
   stars = Object.values(stars).slice(-5).reverse();
+  forks = Object.values(forks).slice(-5).reverse();
 
-  const chartData = [
+  //DUMMY DATA
+
+  /*   const chartData = [
     {
       label: "HTML",
       value: "13",
@@ -64,7 +68,7 @@ const Repos = () => {
       label: "Javascript",
       value: "80",
     },
-  ];
+  ]; */
 
   return (
     <section className="global-section">
@@ -73,7 +77,7 @@ const Repos = () => {
         <Column3D data={stars} />
         <Doughnut2D data={mostPopular} />
         {/* <ExampleChart data={chartData} /> */}
-        <Bar3D data={chartData} />
+        <Bar3D data={forks} />
       </Wrapper>
     </section>
   );
