@@ -49,6 +49,8 @@ const Repos = () => {
     }
   );
 
+  stars = Object.values(stars).slice(-5).reverse();
+
   const chartData = [
     {
       label: "HTML",
@@ -68,7 +70,7 @@ const Repos = () => {
     <section className="global-section">
       <Wrapper className="section-center">
         <Pie3D data={mostUsed} />
-        <Column3D data={chartData} />
+        <Column3D data={stars} />
         <Doughnut2D data={mostPopular} />
         {/* <ExampleChart data={chartData} /> */}
         <Bar3D data={chartData} />
