@@ -6,6 +6,9 @@ const Search = () => {
   const [user, setUser] = React.useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (user) {
+      //additional logic
+    }
   };
 
   return (
