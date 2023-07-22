@@ -10,7 +10,11 @@ const Search = () => {
     <section className="setcion">
       <Wrapper className="section-center">
         <form onSubmit={handleSubmit}>
-          <div className="formc-ontrol"></div>
+          <div className="form-control">
+            <MdSearch />
+            <input type="text" placeholder="Enter Github user" />
+            <button type="submit">Search</button>
+          </div>
         </form>
       </Wrapper>
     </section>
