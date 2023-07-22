@@ -16,6 +16,7 @@ const Search = () => {
             <button type="submit">Search</button>
           </div>
         </form>
+        <h3>Requests left: 60 / 60</h3>
       </Wrapper>
     </section>
   );
