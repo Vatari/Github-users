@@ -4,8 +4,17 @@ import { MdSearch } from "react-icons/md";
 import { GithubContext } from "../context/context";
 const Search = () => {
   const [user, setUser] = React.useState("");
+  const handleSubmit = (e) => {};
 
-  return <h2>search component</h2>;
+  return (
+    <section className="setcion">
+      <Wrapper className="section-center">
+        <form onSubmit={handleSubmit}>
+          <div className="formc-ontrol"></div>
+        </form>
+      </Wrapper>
+    </section>
+  );
 };
 
 const Wrapper = styled.div`
